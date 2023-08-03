@@ -1,6 +1,7 @@
 README - Proyecto RestauranX
 
 Autor: Simon Zelada
+https://github.com/zeladaguerrasimon/ProyectoPrueba
 
 Este proyecto RestauranX es una aplicación de gestión para un restaurante que permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) relacionadas con camareros, platos, mesas y pedidos. La aplicación está desarrollada utilizando Java, Spring Boot y Spring Data JPA.
 
