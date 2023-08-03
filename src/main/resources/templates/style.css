@@ -1,0 +1,31 @@
+body{
+box-sizing:border-box;
+ background-color: #f0f0f0;
+    font-family: Verdana, Tahoma, Calibri;
+    color: darkred;
+
+}
+#navbar{
+letter-spacing:4px;
+
+}
+.header {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+}
+
+.header .nav-link {
+    color: lightred;
+}
+
+.header .nav-link:hover {
+    color: darkred;
+}
+
+.footer {
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
