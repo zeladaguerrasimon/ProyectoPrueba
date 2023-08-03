@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en"xmlns:th="http://www.thymeleaf.com">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--  <link rel="stylesheet" href="../css/style.css">-->
+    <title>Header</title>
+</head>
+<body>
+<div id="header" th:fragment="head">
+
+    <header>
+        <div class="header">
+            <h2>Plataforma RestauranX</h2>
+            <ul class="nav">
+                <a th:href="@{/}" class="nav-link">Inicio</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ingresosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Ingresos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ingresosDropdown">
+                        <a class="dropdown-item" th:href="@{camarero}">Camarero</a>
+                        <a class="dropdown-item" th:href="@{platos}">Platos</a>
+                        <a class="dropdown-item" th:href="@{pedido}">Pedidos</a>
+                        <a class="dropdown-item" th:href="@{mesa}">Mesas</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="listadosDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Listados
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="listadosDropdown">
+                        <a class="dropdown-item" th:href="@{/user/users}">Usuarios</a>
+                        <a class="dropdown-item" th:href="@{/training/list}">Capacitaciones</a>
+                        <a class="dropdown-item" href="#">Visitas</a>
+                        <a class="dropdown-item" href="#">Pagos</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="edicionDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Reporte
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="edicionDropdown">
+                        <a class="dropdown-item" th:href="@{/reporte}">Reporte</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="contactoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contacto
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="gestionDropdown">
+                        <a class="dropdown-item" th:href="@{/contacto}">Formulario</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

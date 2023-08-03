@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"xmlns:th="http://www.thymeleaf.com">
+<head>
+
+  <meta charset="UTF-8"content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<title>Listado de Camareros</title>
+</head>
+<body>
+<div th:replace="header :: head"></div>
+<h1>Listado de Camareros</h1>
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Edad</th>
+    <th>Fecha de Inicio</th>
+  </tr>
+  <tr th:each="camarero : ${camareros}">
+    <td th:text="${camarero.id}"></td>
+    <td th:text="${camarero.nombre}"></td>
+    <td th:text="${camarero.edad}"></td>
+    <td th:text="${camarero.fechaInicio}"></td>
+  </tr>
+</table>
+</div>
+<div th:replace="footer :: foot"></div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
